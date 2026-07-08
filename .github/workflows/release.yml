@@ -19,6 +19,8 @@ on:
       - ".github/workflows/*.yml"
   release:
     types: [ published ]
+permissions:
+  contents: write
 
 jobs:
 
