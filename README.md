@@ -73,6 +73,16 @@ A Xray backend framework that can easily support many panels.
 bash <(curl -Ls https://raw.githubusercontent.com/lolicon2025/XrayR/master/install.sh)
 ```
 
+### alpine系统安装
+
+```
+bash <(curl -Ls https://raw.githubusercontent.com/lolicon2025/XrayR/master/install_alpine.sh)
+```
+
+```
+curl -fsSL https://raw.githubusercontent.com/lolicon2025/XrayR/master/install_alpine.sh | sh
+```
+
 ### 使用Docker部署软件
 
 [Docker部署教程](https://xrayr-project.github.io/XrayR-doc/xrayr-xia-zai-he-an-zhuang/install/docker)
