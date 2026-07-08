@@ -433,7 +433,7 @@ install_XrayR() {
     mkdir -p /usr/local/XrayR/
     cd /usr/local/XrayR/ || exit 1
 
-    if [[ $# == 0 ]]; then
+    if [[ $# == 0 || -z "$1" ]]; then
         last_version=$(curl -Ls "${GITHUB_API_URL}" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
 
         if [[ ! -n "$last_version" ]]; then
@@ -558,4 +558,4 @@ install_XrayR() {
 
 echo -e "${green}开始安装${plain}"
 install_base
-install_XrayR "$1"
+install_XrayR "$@"
